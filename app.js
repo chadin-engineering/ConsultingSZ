@@ -37,7 +37,8 @@ app.use(express.static("public"));
 
 // main page
 app.get("/", (req, res) => {
-  res.render("upgrade-notice.ejs");
+  // res.render("upgrade-notice.ejs");
+  res.render("index");
 });
 app.get("/index", (req, res) => {
   res.render("index");
