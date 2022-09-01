@@ -37,7 +37,6 @@ app.use(express.static("public"));
 
 // main page
 app.get("/", (req, res) => {
-  // res.render("upgrade-notice.ejs");
   res.render("index");
 });
 app.get("/index", (req, res) => {
@@ -223,6 +222,8 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
+
+// res.render("upgrade-notice.ejs");
 app.listen((process.env.PORT || 80), function(){
   console.log("Listening on port " + (process.env.PORT || 80));
 });
